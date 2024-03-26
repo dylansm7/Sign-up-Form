@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tai+Viet&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sign-up-Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left-background">
+
+    </div>
+    <div class="right-form">
+      <div class="top">
+        <h2>What goes best with a cup of coffee? Another cup.</h2>
+      </div>
+      
+      <div class="center">
+        <div class="form-div">
+          <form>
+            <div class="form-left">
+              <label for="first-name" class="label-left">FIRST NAME</label>
+              <input type="text" id="first-name" maxlength="15">
+              <label for="email" class="label-left">*EMAIL ADDRESS</label>
+              <input type="email" id="email" placeholder="example@example.com" required>
+              <label for="pass" class="label-left">*PASSWORD</label>
+              <div class="password-container">
+                <img src="images/unhide.png" alt="unhide password icon" class="input-image" id="pass-img" width="14px" height="14px">
+                <input type="password" id="pass" class="myInput" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+\-]).{8,16}$"> 
+              </div>  
+            </div>
+            <div class="form-right">
+              <label for="last-name" class="label-right">LAST NAME</label>
+              <input type="text" id="last-name" maxlength="25">
+              <label for="phone-number" class="label-right">PHONE NUMBER</label>
+              <input type="tel" id="phone-number" minlength="8" maxlength="10">
+              <label for="confirm-pass" class="label-right">*CONFIRM PASSWORD</label>
+              <div class="password-container">
+                <img src="images/unhide.png" alt="unhide password icon" class="input-image" id="confirm-pass-img" width="14px" height="14px">
+                <input type="password" id="confirm-pass" class="myInput" required>
+                
+              </div>
+            </div>
+            <input type="submit" value="Create Account">
+          </form>
+        </div> 
+      </div>
+
+    
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>

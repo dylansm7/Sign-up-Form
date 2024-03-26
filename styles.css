@@ -1,0 +1,155 @@
+
+:root {
+  --font-family: "Noto Sans Tai Viet", sans-serif;
+  --primary-color: #8C6A5D;
+  --secondary-color: #B3A398;
+  --background-color: #EDE4E0;
+  --box-shadow-color: rgba(0, 0, 0, 0.7);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.left-background {
+  background-image: url(images/nathan-dumlao-XOhI_kW_TaM-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+  height: 100vh;
+}
+
+.right-form {
+  width: 60%;
+  background-color: var(--background-color);
+  opacity: 0.9; /* Changed to decimal value */
+  display: flex;
+  flex-direction: column;
+}
+
+.top, .bottom {
+  width: 100%;
+  height: 25%;
+  display: flex;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-top: 40px;
+  margin-left: 25px;
+  width: 300px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.center {
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  box-shadow: 0 9px 9px -7px var(--box-shadow-color); /* Used variable */
+  position: relative;
+}
+
+.form-div {
+  width: 66%;
+  height: 80%;
+  margin-top: 25px;
+  margin-left: 35px;
+  display: flex;
+}
+
+label {
+  width: 100%;
+  display: inline-block;
+  margin-top: 9%;
+  font-size: 0.6rem;
+  font-family: var(--font-family);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-left, .form-right {
+  width: 50%;
+  height: 100%;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 70%;
+  height: 20px;
+  font-size: 11px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin-top: 12%;
+  width: 20%;
+  height: 30px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 2px solid var(--primary-color);
+  outline: none;
+  
+}
+
+input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+
+input[type="submit"]:active {
+  background-color: var(--primary-color);
+  border: none;
+  box-shadow: 3px 5px 4px var(--secondary-color);
+}
+
+.password-container{
+  position: relative;
+  height: 20px;
+}
+
+.myInput {
+  padding-right: 14px; /* Adjust as needed to make space for the image */
+}
+
+.input-image {
+  position: absolute;
+  top: 50%; /* Adjust to vertically center the image */
+  left: 63%; /* Adjust to position the image relative to the input */
+  transform: translateY(-50%);
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
+
+
+
+
+
+
